@@ -468,7 +468,7 @@ const LoadingState = () => {
       1500,
     );
     return () => clearInterval(iv);
-  }, []);
+  }, [steps.length]);
   return (
     <div
       style={{
@@ -1232,7 +1232,7 @@ function App() {
 
   const fetchReviews = () => {
     axios
-      .get("http://127.0.0.1:8000/api/v1/auth/reviews")
+      .get("https://ai-code-reviewer-qkwp.onrender.com/api/v1/auth/reviews")
       .then((res) => setReviews(res.data))
       .catch((err) => console.error(err));
   };
@@ -1245,7 +1245,7 @@ function App() {
     setLoading(true);
     try {
       const res = await axios.get(
-        `http://127.0.0.1:8000/api/v1/auth/repo?repo_url=${encodeURIComponent(repoUrl)}`,
+        `https://ai-code-reviewer-qkwp.onrender.com/api/v1/auth/repo?repo_url=${encodeURIComponent(repoUrl)}`,
       );
       if (res.data.cached) {
         setReviews((prev) => [
@@ -1265,7 +1265,7 @@ function App() {
       const iv = setInterval(async () => {
         try {
           const jr = await axios.get(
-            `http://127.0.0.1:8000/api/v1/auth/job/${jobId}`,
+            `https://ai-code-reviewer-qkwp.onrender.com/api/v1/auth/job/${jobId}`,
           );
           if (jr.data.status === "completed") {
             clearInterval(iv);
