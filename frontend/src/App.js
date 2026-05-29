@@ -1230,12 +1230,12 @@ function App() {
     "owner/your-repo",
   ]);
 
-  const fetchReviews = () => {
-    axios
-      .get("https://ai-code-reviewer-qkwp.onrender.com/api/v1/auth/reviews")
-      .then((res) => setReviews(res.data))
-      .catch((err) => console.error(err));
-  };
+  //const fetchReviews = () => {
+    //axios
+    //  .get("https://ai-code-reviewer-qkwp.onrender.com/api/v1/auth/reviews")
+      //.then((res) => setReviews(res.data))
+      //.catch((err) => console.error(err));
+  //};
   //useEffect(() => {
    // fetchReviews();
   //}, []);
