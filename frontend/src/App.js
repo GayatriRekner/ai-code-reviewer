@@ -1236,9 +1236,9 @@ function App() {
       .then((res) => setReviews(res.data))
       .catch((err) => console.error(err));
   };
-  useEffect(() => {
-    fetchReviews();
-  }, []);
+  //useEffect(() => {
+   // fetchReviews();
+  //}, []);
 
   const handleAnalyze = async () => {
     if (!repoUrl || loading) return;
