@@ -8,7 +8,7 @@
 
 ## 🚀 Live Demo
 
-🔗 **[codereview.ai](https://ai-code-reviewer-nine-rust.vercel.app/)** ← *(update after deploying)*
+🔗 **[codereview.ai](https://ai-code-reviewer-nine-rust.vercel.app/)** 
 
 ---
 
